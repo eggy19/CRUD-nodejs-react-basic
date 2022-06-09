@@ -1,0 +1,37 @@
+GET http://localhost:5000/products 
+
+###
+GET http://localhost:5000/products/2
+
+###
+POST http://localhost:5000/products 
+Content-Type:  application/json
+
+{
+    "title" : "Ruler Triangel",
+    "kategori": "5",
+    "price" : "20000"
+}
+
+###
+PATCH  http://localhost:5000/products/2 
+Content-Type:  application/json
+
+{
+    "title" : "Papan Tulis Putih",
+    "price" : "320000"
+}
+
+###
+DELETE  http://localhost:5000/products/4
+
+###
+POST http://localhost:5000/kategori 
+Content-Type:  application/json
+
+{
+    "nama_kat" : "Alat Masak"
+}
+
+###
+GET http://localhost:5000/kategori 
